@@ -1,0 +1,128 @@
+[
+  {
+    "userName": "ashwaniUI",
+    "title": "Taj Mahal",
+    "des": "The Taj Mahal is an ivory-white marble mausoleum on the south bank of the Yamuna river in the Indian city of Agra. It was commissioned in 1632 by the Mughal emperor, Shah Jahan, to house the tomb of his favourite wife, Mumtaz Mahal.",
+    "position": {
+      "lat": 27.1750199,
+      "lng": 78.0399665
+    }
+  },
+  {
+    "userName": "ashwaniUI",
+    "title": "Amer Palace",
+    "des": "Amer Fort is a fort located in Amer, Rajasthan, India. Amer is a town with an area of 4 square kilometres located 11 kilometres from Jaipur, the capital of Rajasthan. Located high on a hill, it is the principal tourist attraction in Jaipur.",
+    "position": {
+      "lat": 27.8043499,
+      "lng": 75.5993813
+    }
+  },
+  {
+    "userName": "ashwaniUI",
+    "title": "Jaigarh Fort",
+    "des": "Jaigarh Fort is situated on the promontory called the Cheel ka Teela of the Aravalli range; it overlooks the Amer Fort and the Maota Lake, near Amer in Jaipur, Rajasthan, India. The fort was built by Jai Singh II in 1726 to protect the Amer Fort and its palace complex and was named after him.",
+    "position": {
+      "lat": 26.9850925,
+      "lng": 75.8434041
+    }
+  },
+  {
+    "userName": "ashwaniUI",
+    "title": "Dudhsagar Falls",
+    "des": "Dudhsagar Falls is a four-tiered waterfall located on the Mandovi River in the Indian state of Goa. It is 60 km from Panaji by road and is located on the Madgaon-Belagavi rail route about 46 km east of Madgaon and 80 km south of Belagavi.",
+    "position": {
+      "lat": 15.3144427,
+      "lng": 74.3121186
+    }
+  },
+  {
+    "userName": "ashwaniUI",
+    "title": "Elephanta Caves",
+    "des": "Elephanta Caves are a UNESCO World Heritage Site and a collection of cave temples predominantly dedicated to the Hindu god Shiva. They are located on Elephanta Island, or Gharapuri in Mumbai Harbour, 10 kilometres to the east of the city of Mumbai in the Indian state of Mahārāshtra.",
+    "position": {
+      "lat": 23.7013882,
+      "lng": 70.6026502
+    }
+  },
+  {
+    "userName": "ashwaniUI",
+    "title": "Jaisalmer Fort",
+    "des": "Jaisalmer Fort is situated in the city of Jaisalmer, in the Indian state of Rajasthan. It is believed to be one of the very few “living forts” in the world, as nearly one fourth of the old city's population still resides within the fort. For the better part of its 800-year history, the fort was the city of Jaisalmer.",
+    "position": {
+      "lat": 26.9127729,
+      "lng": 70.9108793
+    }
+  },
+  {
+    "userName": "ashwaniUI",
+    "title": "Spiti Valley",
+    "des": "Spiti Valley is a cold desert mountain valley located high in the Himalayas in the north-eastern part of the northern Indian state of Himachal Pradesh. The name 'Spiti' means 'The Middle Land', i.e. the land between Tibet and India.",
+    "position": {
+      "lat": 32.2461353,
+      "lng": 78.0174064
+    }
+  },
+  {
+    "userName": "AshwaniK",
+    "title": "TCIG",
+    "des": "WE ARE A UNIQUE UNION OF PASSIONATE CREATIVE DESIGNERS, BUSINESS SAVVY MARKETERS AND CUTTING EDGE DEVELOPERS.\n \n Many agencies are concerned only with creativity - coming up with a cool new slogan or 'evolving' a logo. Others prefer to stick with the technology side of things, writing code or developing apps. But when you've only got one half of the equation, it's difficult to get the right results for your brand or service.",
+    "position": {
+      "lat": 26.2390118,
+      "lng": 50.5345233
+    }
+  },
+  {
+    "userName": "Ak",
+    "title": "Colossus of Rhodes",
+    "des": "The Colossus of Rhodes was a statue of the Greek sun-god Helios, erected in the city of Rhodes, on the Greek island of the same name, by Chares of Lindos in 280 BC.",
+    "position": {
+      "lat": 36.4517266,
+      "lng": 28.2230263
+    }
+  },
+  {
+    "userName": "Ash",
+    "title": "Great Pyramid of Giza",
+    "des": "The Great Pyramid of Giza is the oldest and largest of the three pyramids in the Giza pyramid complex bordering what is now El Giza, Egypt. It is the oldest of the Seven Wonders of the Ancient World, and the only one to remain largely intact. ",
+    "position": {
+      "lat": 29.9792391,
+      "lng": 31.1320132
+    }
+  },
+  {
+    "userName": "Ashish",
+    "title": "Mausoleum at Halicarnassus",
+    "des": "The Mausoleum at Halicarnassus or Tomb of Mausolus was a tomb built between 353 and 350 BC at Halicarnassus for Mausolus, a satrap in the Persian Empire, and his sister-wife Artemisia II of Caria. The structure was designed by the Greek architects Satyros and Pythius of Priene.",
+    "position": {
+      "lat": 37.038132,
+      "lng": 27.4243849
+    }
+  },
+  {
+    "userName": "Anish",
+    "title": "Temple of Artemis",
+    "des": "The Temple of Artemis or Artemision, also known less precisely as the Temple of Diana, was a Greek temple dedicated to an ancient, local form of the goddess Artemis. It was located in Ephesus. It was completely rebuilt three times, and in its final form was one of the Seven Wonders of the Ancient World.",
+    "position": {
+      "lat": 37.9497392,
+      "lng": 27.3640305
+    }
+  },
+  {
+    "userName": "Anish",
+    "title": "Sultan Ahmed Mosque",
+    "des": "The Sultan Ahmed Mosque or Sultan Ahmet Mosque is a historic mosque located in Istanbul, Turkey. A popular tourist site, the Sultan Ahmed Mosque continues to function as a mosque today; men still kneel in prayer on the mosque's lush red carpet after the call to prayer.",
+    "position": {
+      "lat": 41.0054096,
+      "lng": 28.9768138
+    }
+  },
+  {
+    "userName": "Anish",
+    "title": "Temple of Olympian Zeus, Athens",
+    "des": "The Temple of Olympian Zeus, also known as the Olympieion or Columns of the Olympian Zeus, is a former colossal temple at the centre of the Greek capital Athens. It was dedicated to 'Olympian' Zeus, a name originating from his position as head of the Olympian gods.",
+    "position": {
+      "lat": 37.9693,
+      "lng": 23.7331
+    }
+  }
+]
