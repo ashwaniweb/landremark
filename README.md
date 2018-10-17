@@ -1,4 +1,4 @@
-# LandMark Remark:
+# Land Remark:
 
 You are to create a simple responsive web application – working title: “Landmark Remark” - that allows users to save location based notes on a map. These notes can be displayed on the map where they were saved and viewed by the user that created the note as well as other users of the application. The application must demonstrate the functionality captured in the following user stories:
 
