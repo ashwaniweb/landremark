@@ -8,7 +8,7 @@ const addNotes = (state = initialState, action) => {
   switch (action.type) {
     case ADD_NOTES:
       return {
-        show: action.payload.addNotes
+        show: action.payload
       };
     default:
       return state;

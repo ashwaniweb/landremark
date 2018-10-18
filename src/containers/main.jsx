@@ -1,13 +1,13 @@
 import React, { Component } from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, withRouter } from "react-router-dom";
 import { Grid } from "react-bootstrap";
 import { connect } from "react-redux";
-import { myNotes } from "../../actions/myNotes";
-import Home from "../home";
-import { MyNotes } from "../myNotes";
-import OtherNotes from "../otherNotes";
-import { AddModal } from "../common/modal";
-import { withRouter } from "react-router-dom";
+import { myNotes } from "../actions/myNotes";
+import { addNotes } from "../actions/addNotes";
+import Home from "../components/home";
+import { MyNotes } from "../components/myNotes";
+import OtherNotes from "../components/otherNotes";
+import AddModal from "../components/common/modal";
 class Main extends Component {
   constructor(props) {
     super(props);
@@ -45,7 +45,12 @@ class Main extends Component {
             )}
           />
         </Switch>
-        <AddModal markers={this.props.markers} />
+        <AddModal
+          markers={this.props.markers}
+          addShow={this.props.addShow}
+          addNotes={this.props.addNotes}
+          onSubmit={this.props.submitNote}
+        />
       </Grid>
     );
   }
@@ -53,11 +58,13 @@ class Main extends Component {
 
 const mapStateToProps = state => {
   return {
-    MyNotes: state.myNotes.myNotes
+    MyNotes: state.myNotes.myNotes,
+    addNotes: state.addNotes.show
   };
 };
 const mapDispatchToProps = {
-  myNotes
+  myNotes,
+  addNotes
 };
 export default withRouter(
   connect(

@@ -3,7 +3,8 @@ import { BrowserRouter as Router } from "react-router-dom";
 import { connect } from "react-redux";
 import { currentLocation } from "./actions/currentLocation";
 import { defaultData } from "./actions/onload";
-import Main from "./components/common/main";
+import { addNotes } from "./actions/addNotes";
+import Main from "./containers/main";
 import { Menu } from "./components/common/menu";
 import TestData from "./data/data";
 
@@ -47,7 +48,7 @@ class App extends Component {
       <div className="App">
         <Router>
           <Fragment>
-            <Menu />
+            <Menu addNotes={this.props.addNotes} />
             <Main NotesData={NotesData} markers={markers} {...this.props} />
           </Fragment>
         </Router>
@@ -58,12 +59,14 @@ class App extends Component {
 const mapStateToProps = state => {
   return {
     markers: state.currentLocation.markers,
-    NotesData: state.onLoad.NotesData
+    NotesData: state.onLoad.NotesData,
+    addShow: state.addNotes.show
   };
 };
 const mapDispatchToProps = {
   currentLocation,
-  defaultData
+  defaultData,
+  addNotes
 };
 export default connect(
   mapStateToProps,

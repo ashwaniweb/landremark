@@ -14,7 +14,11 @@ export const Menu = props => {
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle />
-        <Button type="button" onClick={props.handleShow} className="mobile-add">
+        <Button
+          type="button"
+          onClick={() => props.addNotes(true)}
+          className="mobile-add"
+        >
           Add Note
         </Button>
       </Navbar.Header>
@@ -31,7 +35,7 @@ export const Menu = props => {
           </IndexLinkContainer>
         </Nav>
         <Navbar.Form pullRight className="not-mobile-add">
-          <Button type="button" onClick={props.handleShow}>
+          <Button type="button" onClick={() => props.addNotes(true)}>
             Add Note
           </Button>
         </Navbar.Form>

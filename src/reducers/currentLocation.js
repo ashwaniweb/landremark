@@ -2,7 +2,7 @@ import { CURRENT_LOCATION } from "../constants/actionTypes";
 const initialState = {
   markers: {
     title: "Current position",
-    des: ""
+    des: "Add Some description here"
   }
 };
 const currentLocation = (state = initialState, action) => {
