@@ -37,7 +37,6 @@ let AddModal = props => {
                 type="text"
                 placeholder="Note Location(Lat,Lng)"
                 className="form-control"
-                defaultValue={props.markers.position.let}
               />
             </FormGroup>
           </Modal.Body>
@@ -60,18 +59,17 @@ let AddModal = props => {
 
 // Decorate with reduxForm(). It will read the initialValues prop provided by connect()
 AddModal = reduxForm({
-  form: "AddNote" // a unique identifier for this form
+  form: "AddModal" // a unique identifier for this form
 })(AddModal);
 
 // You have to connect() to any reducers that you wish to connect to yourself
-AddModal = connect(state => ({
-  initialValues: state.currentLocation.markers // pull initial values from account reducer
-}))(AddModal);
-
-export default AddModal;
-
-// export default reduxForm({
-//   // a unique name for the form
-//   form: "AddNote",
-//   enableReinitialize: true
-// })(AddModal);
+export default connect(
+  state => ({
+    // initialValues: state.currentLocation.markers, // pull initial values from account reducer
+    initialValues: {
+      ...state.currentLocation.markers,
+      position: JSON.stringify(state.currentLocation)
+    }
+  }),
+  { load: AddModal } // bind account loading action creator
+)(AddModal);

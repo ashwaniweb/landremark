@@ -2,7 +2,10 @@ import { SUBMIT_NOTE } from "../constants/actionTypes";
 const initialState = {
   form: {
     des: "",
-    position: {},
+    position: {
+      lat: "",
+      lng: ""
+    },
     title: "Current position",
     userName: ""
   }

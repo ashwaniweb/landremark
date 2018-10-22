@@ -9,12 +9,7 @@ import { Menu } from "./components/common/menu";
 import TestData from "./data/data";
 
 class App extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {};
-  }
-
-  componentDidMount() {
+  componentWillMount() {
     this.getGeoLocation();
     if (typeof Storage !== "undefined") {
       const data = localStorage.getItem("testData");
