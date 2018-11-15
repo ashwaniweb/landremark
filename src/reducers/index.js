@@ -1,15 +1,15 @@
 import { combineReducers } from "redux";
-import { reducer as formReducer } from "redux-form";
 import onLoad from "./onload";
 import currentLocation from "./currentLocation";
 import myNotes from "./myNotes";
 import addNotes from "./addNotes";
-import submitNote from "./submitNote";
+import addNotesModal from "./addNotesModal";
+import searchNotes from "./searchNotes";
 export default combineReducers({
-  form: formReducer,
   onLoad,
   currentLocation,
   myNotes,
   addNotes,
-  submitNote
+  addNotesModal,
+  searchNotes
 });

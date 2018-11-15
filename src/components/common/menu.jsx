@@ -16,7 +16,7 @@ export const Menu = props => {
         <Navbar.Toggle />
         <Button
           type="button"
-          onClick={() => props.addNotes(true)}
+          onClick={() => props.addNotesModal(true)}
           className="mobile-add"
         >
           Add Note
@@ -33,9 +33,12 @@ export const Menu = props => {
           <IndexLinkContainer to="/others-notes">
             <NavItem eventKey={3}>Others Notes</NavItem>
           </IndexLinkContainer>
+          <IndexLinkContainer to="/login">
+            <NavItem eventKey={1}>Login</NavItem>
+          </IndexLinkContainer>
         </Nav>
         <Navbar.Form pullRight className="not-mobile-add">
-          <Button type="button" onClick={() => props.addNotes(true)}>
+          <Button type="button" onClick={() => props.addNotesModal(true)}>
             Add Note
           </Button>
         </Navbar.Form>

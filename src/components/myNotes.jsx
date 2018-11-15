@@ -8,7 +8,7 @@ export const MyNotes = props => {
     <Row>
       <Col xs={12} md={3}>
         <NotesTitle title="My Notes" />
-        <NotesList Title="My Notes" NotesData={props.MyNotes} myKey={"notes"} />
+        <NotesList Title="My Notes" NotesList={props.MyNotes} myKey={"notes"} />
       </Col>
       <Col xs={12} md={9}>
         <MapContainer NotesData={props.MyNotes} />

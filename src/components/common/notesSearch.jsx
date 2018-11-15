@@ -6,8 +6,9 @@ export const NoteSearch = props => {
       <FormControl
         type="text"
         placeholder="Search"
-        value={props.value}
+        value={props.searchNotesText}
         onChange={props.filterList}
+        name="searchNotes"
       />
     </FormGroup>
   );

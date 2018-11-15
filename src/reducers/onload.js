@@ -5,6 +5,7 @@ const initialState = {
 };
 
 const NotesData = (state = initialState, action) => {
+  // debugger;
   switch (action.type) {
     case ON_LOAD:
       return {

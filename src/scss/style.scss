@@ -1,6 +1,70 @@
+@import 'variables';
+@import 'flex';
+@import 'display';
+@import 'position';
+@import 'spacing';
+@import 'pagination';
+@import 'sidenav';
+@import 'checkbox';
+/* Define the Sassy Map called $icons */
+
+$textColor: ( primary: #007bff, secondary: #868e96, success: #28a745, danger: #EE8E8F, warning: #ffc107, info: #41cfde, light: #f8f9fa, dark: #343a40, muted: #868e96, white: #fff, );
 body {
-  margin: 0;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #333;
+}
+
+/* For each key in the map, created an own class */
+
+@each $name,
+$value in $textColor {
+  .text-#{$name} {
+    color: $value;
+  }
+}
+
+// global css
+.m-t-10 {
+  margin-top: 10px;
+}
+
+.m-b-15 {
+  margin-bottom: 15px;
+}
+
+.m-t-15 {
+  margin-top: 15px;
+}
+
+.m-l-none {
+  margin-left: 0px !important;
+}
+
+.p-lr-none {
+  padding-left: 0px !important;
+  padding-right: 0px !important;
+}
+
+.border-t-none {
+  border-top: none !important;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.text-navy {
+  color: #1ab394;
+}
+
+.no-shadow {
+  box-shadow: none !important;
+}
+
+label {
+  font-weight: 600;
 }
 .btn {
   &.btn-danger,
@@ -57,3 +121,4 @@ body {
     margin-top: 0;
   }
 }
+

@@ -1,7 +1,8 @@
 import * as types from "../constants/actionTypes";
-export const myNotes = payload => dispatch => {
+const myNotesAction = payload => dispatch => {
   dispatch({
-    type: types.MY_NOTES,
+    type: types.MY_NOTES_ACTION,
     payload
   });
 };
+export default myNotesAction;

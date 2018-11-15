@@ -1,15 +1,15 @@
 import React, { Component, Fragment } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 import { connect } from "react-redux";
-import { currentLocation } from "./actions/currentLocation";
-import { defaultData } from "./actions/onload";
-import { addNotes } from "./actions/addNotes";
+import PropTypes from "prop-types";
+import { ConnectedRouter } from "connected-react-router";
+import { defaultData, currentLocation, addNotesModal } from "./actions";
 import Main from "./containers/main";
 import { Menu } from "./components/common/menu";
 import TestData from "./data/data";
-
 class App extends Component {
   componentWillMount() {
+    debugger;
     this.getGeoLocation();
     if (typeof Storage !== "undefined") {
       const data = localStorage.getItem("testData");
@@ -34,17 +34,17 @@ class App extends Component {
         });
       });
     } else {
-      console.log("error");
+      console.log("error ddd");
     }
   }
   render() {
-    const { NotesData, markers } = this.props;
+    const { markers } = this.props;
     return (
       <div className="App">
         <Router>
           <Fragment>
-            <Menu addNotes={this.props.addNotes} />
-            <Main NotesData={NotesData} markers={markers} {...this.props} />
+            <Menu addNotesModal={this.props.addNotesModal} />
+            <Main markers={markers} {...this.props} />
           </Fragment>
         </Router>
       </div>
@@ -54,14 +54,16 @@ class App extends Component {
 const mapStateToProps = state => {
   return {
     markers: state.currentLocation.markers,
-    NotesData: state.onLoad.NotesData,
-    addShow: state.addNotes.show
+    NotesData: state.onLoad.NotesData
   };
 };
 const mapDispatchToProps = {
-  currentLocation,
   defaultData,
-  addNotes
+  currentLocation,
+  addNotesModal
+};
+App.propTypes = {
+  history: PropTypes.object
 };
 export default connect(
   mapStateToProps,

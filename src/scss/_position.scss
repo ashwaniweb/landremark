@@ -1,0 +1,7 @@
+$pos: ( a: absolute, r: relative, f: fixed, s: static, );
+@each $name,
+$value in $pos {
+  .pos-#{$name} {
+    position: $value;
+  }
+}

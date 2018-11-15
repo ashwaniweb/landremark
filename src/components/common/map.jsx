@@ -2,9 +2,8 @@ import React from "react";
 import { Map, InfoWindow, Marker } from "google-maps-react";
 
 export const MapView = props => {
+  // debugger;
   const { markers, NotesData } = props;
-  console.log(markers);
-
   return (
     <Map
       google={props.google}

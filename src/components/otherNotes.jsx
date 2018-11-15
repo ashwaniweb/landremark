@@ -4,18 +4,20 @@ import { NotesTitle } from "./common/notesTitle";
 import { NoteSearch } from "./common/notesSearch";
 import { NotesList } from "./common/notesList";
 import MapContainer from "../containers/map";
-const OtherNotes = props => {
+export const OtherNotes = props => {
   return (
     <Row>
       <Col xs={12} md={3}>
         <NotesTitle title="Other Notes" />
-        <NoteSearch />
-        <NotesList NotesData={props.NotesData} myKey={"notes"} />
+        <NoteSearch
+          searchNotesText={props.searchNotesText}
+          filterList={props.filterList}
+        />
+        <NotesList NotesList={props.searchData} myKey={"notes"} />
       </Col>
       <Col xs={12} md={9}>
-        <MapContainer NotesData={props.NotesData} />
+        <MapContainer NotesData={props.searchData} />
       </Col>
     </Row>
   );
 };
-export default OtherNotes;
